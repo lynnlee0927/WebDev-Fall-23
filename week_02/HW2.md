@@ -1,6 +1,6 @@
 # Answer a series of questions
 
-##### 1. Take a look at a fairly complicated recipe website. Using a tool of your choice, analyze/diagram what their site map and information architecture looks like. Obviously, I don’t expect you to go down to the individual recipe level, but be sure to show how the site you choose breaks down their recipes into categories and at least 1 sub-category.
+#### 1. Take a look at a fairly complicated recipe website. Using a tool of your choice, analyze/diagram what their site map and information architecture looks like. Obviously, I don’t expect you to go down to the individual recipe level, but be sure to show how the site you choose breaks down their recipes into categories and at least 1 sub-category.
 
 
 The website I've chosen is https://www.allrecipes.com/recipe/228823/quick-beef-stir-fry/, which aims to teach people how to prepare beef stir fry. When visiting the website, you'll notice a navigation menu at the top that guides users to select categories of interest. Additionally, the website presents hyperlinks for dish names, ratings, and images to provide a quick introduction to the featured dish.
@@ -61,7 +61,7 @@ Basically, the structure is:
 
 
 
-##### 2.Read [this article](http://mediatemple.net/blog/tips/five-important-considerations-for-wireframing/?utm_source=weekly_newsletter&utm_medium=email&utm_campaign=aug17newsletter) on wireframing. Post a brief reaction in a markdown file in your repo.
+#### 2.Read [this article](http://mediatemple.net/blog/tips/five-important-considerations-for-wireframing/?utm_source=weekly_newsletter&utm_medium=email&utm_campaign=aug17newsletter) on wireframing. Post a brief reaction in a markdown file in your repo.
 
 These considerations include:
 
@@ -75,8 +75,8 @@ Overall, these considerations emphasize the importance of careful planning, coll
 
 
 
-##### 3.Using the recipe you uploaded last week _(or a new one)_ wireframe your desired layout for a single recipe page on your hypothetical recipe site. Think - rows, columns, sidebars, headers, footers etc. Be sure to mark up each block of content in your wireframe with a few HTML tags for practice.
+#### 3.Using the recipe you uploaded last week _(or a new one)_ wireframe your desired layout for a single recipe page on your hypothetical recipe site. Think - rows, columns, sidebars, headers, footers etc. Be sure to mark up each block of content in your wireframe with a few HTML tags for practice.
 
 
 
-##### 4.Mark up your recipe in HTML semantically based on your wireframe. Bonus points for applying some basic font and color styles.
+#### 4.Mark up your recipe in HTML semantically based on your wireframe. Bonus points for applying some basic font and color styles.
