@@ -1,4 +1,4 @@
-# Richard Lee
+# Richard(Lynn) Lee
 
 # DM-UY 2193 Syllabus
 
