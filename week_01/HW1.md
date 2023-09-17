@@ -2,7 +2,7 @@
 
 ### 1. Photo of the completed dish
 
-![Beef pic](/Users/yijianli/Desktop/Intro to Web Development/WebDev-Fall-23/week_01/Beef pic.png)
+<img src= "./beefPic.png" /> 
 
 ### 2.Brief description of the recipe 
 
