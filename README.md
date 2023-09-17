@@ -1,4 +1,4 @@
-# YIJIAN LI
+# Richard Lee
 
 # DM-UY 2193 Syllabus
 
