@@ -1,0 +1,67 @@
+#logo{
+    margin-left: -150px;
+    margin-top: -60px;
+}
+
+header{
+    margin-left: 120px;
+    margin-top: 40px;
+    font-family: "Gabarito";
+    font-size: 150%;
+}
+
+header h1{
+    margin-top: -20px;
+}
+
+body {
+    background: #e3e5e95e;
+}
+
+#front-nav {
+    padding: 119px;
+    margin-top: -30px;
+    font-family:"Leckerli One";
+    font-size: 180%;
+}
+
+#front-nav a {
+    display: block;
+    color: rgb(173, 171, 171);
+    text-decoration: none;
+    transition: all 1s;
+    line-height: 80px;
+}
+
+#front-nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#contact-info {
+    padding: 119px;
+    margin-top: -100px;
+    font-size: 180%;
+    color: rgb(188, 185, 185); /* Original gray color for the parent container */
+    text-decoration: none;
+}
+
+#contact-info a i.fa.fa-facebook-official,
+#contact-info a i.fa.fa-github,
+#contact-info a i.fa.fa-instagram,
+#contact-info a i.fa.fa-linkedin-square {
+    color: #888; /* Gray color for the GitHub icon */
+}
+
+#contact-info a i.fa.fa-instagram{
+    color:gray;
+} {
+    color: #888; /* Gray color for the Facebook icon */
+}
+
+#contact-info a:hover i.fa.fa-facebook-official,
+#contact-info a:hover i.fa.fa-github,
+#contact-info a:hover i.fa.fa-instagram,
+#contact-info a:hover i.fa.fa-linkedin-square {
+    color: #000; /* Change the color of the specific icon to black when hovering */
+}
