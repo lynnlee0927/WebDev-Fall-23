@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 #logo{
-    margin-left: -150px;
+    margin-left: -154px;
     margin-top: -60px;
 }
 
@@ -7,7 +12,7 @@ header{
     margin-left: 120px;
     margin-top: 40px;
     font-family: "Gabarito";
-    font-size: 150%;
+    font-size: 170%;
 }
 
 header h1{
@@ -16,6 +21,7 @@ header h1{
 
 body {
     background: #e3e5e95e;
+    display: flex;
 }
 
 #front-nav {
@@ -25,9 +31,14 @@ body {
     font-size: 180%;
 }
 
+#front-first{
+    flex-direction: row;
+    background-color: rgb(185, 122, 39);
+}
+
 #front-nav a {
     display: block;
-    color: rgb(173, 171, 171);
+    color: rgb(216, 214, 214);
     text-decoration: none;
     transition: all 1s;
     line-height: 80px;
@@ -42,7 +53,7 @@ body {
     padding: 119px;
     margin-top: -100px;
     font-size: 180%;
-    color: rgb(188, 185, 185); /* Original gray color for the parent container */
+    color: rgb(216, 214, 214); /* Original gray color for the parent container */
     text-decoration: none;
 }
 
@@ -50,13 +61,7 @@ body {
 #contact-info a i.fa.fa-github,
 #contact-info a i.fa.fa-instagram,
 #contact-info a i.fa.fa-linkedin-square {
-    color: #888; /* Gray color for the GitHub icon */
-}
-
-#contact-info a i.fa.fa-instagram{
-    color:gray;
-} {
-    color: #888; /* Gray color for the Facebook icon */
+    color: #bebbbb; /* Gray color for the GitHub icon */
 }
 
 #contact-info a:hover i.fa.fa-facebook-official,
@@ -64,4 +69,92 @@ body {
 #contact-info a:hover i.fa.fa-instagram,
 #contact-info a:hover i.fa.fa-linkedin-square {
     color: #000; /* Change the color of the specific icon to black when hovering */
+}
+
+.container{
+    width:900px;
+    margin:0 auto;
+    padding-top: 50px;
+}
+
+.polaroid {
+    position: relative;
+    width: 240px;
+    display: inline-block;
+    margin:20px;
+}
+
+.polaroid img {
+    width:100%;
+    height:auto;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    /*h-shadow v-shadow | blur spread color*/
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+    font: 400 18px 'Kaushan Script', cursive;
+    color: #888;
+}
+
+
+/* TRANSFORMS */
+
+.rotateLeft, .scaleUniform, .scaleX, .skewX, .rotX, .rotation {
+    transition: all 2s ease-in-out;
+}
+
+
+.rotateLeft {
+    transform: rotate(-10deg);
+    transform-origin: 50% 50%;
+}
+
+.rotation:hover{
+    transform: rotate(10deg);
+    transition: transform 1s;
+}
+
+.rotateLeft:hover {
+    transform: rotate(10deg);
+}
+
+.scale2x {
+    transform: scale(2);
+    z-index: 20;
+}
+
+.scaleX {
+    transform: scale(1.5,1);
+}
+
+.skewX {
+    transform: skewX(20deg);
+}
+
+.skewY {
+    transform: skewY(20deg);
+}
+
+.skewBoth {
+    transform: skew(-45deg, 4deg);
+}
+
+.rotX {
+transform: rotateX(45deg);
+}
+
+.rotY {
+    transform: rotateY(45deg);
+}
+
+.rotZ {
+    transform: rotateZ(45deg);
 }
