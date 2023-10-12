@@ -84,6 +84,7 @@ body {
     margin:20px;
 }
 
+
 .polaroid img {
     width:100%;
     height:auto;
@@ -104,11 +105,23 @@ body {
     color: #888;
 }
 
+#img3{
+    width: 117%;
+    height:auto;
+    margin-left: 170px;
+    margin-bottom: -110px;
+}
+
+#img1{
+    width: 104%;
+    height:auto;
+}
+
 
 /* TRANSFORMS */
 
-.rotateLeft, .scaleUniform, .scaleX, .skewX, .rotX, .rotation {
-    transition: all 2s ease-in-out;
+.rotateLeft, .scaleUniform, .scaleX, .skewX, .rotX, .rotation, .rotateRight {
+    transition: all 1.5s ease-in-out;
 }
 
 
@@ -118,8 +131,11 @@ body {
 }
 
 .rotation:hover{
-    transform: rotate(10deg);
-    transition: transform 1s;
+    transform: rotate(-10deg);
+}
+
+.rotateRight:hover{
+    transform: rotate(6deg)
 }
 
 .rotateLeft:hover {
@@ -127,34 +143,32 @@ body {
 }
 
 .scale2x {
-    transform: scale(2);
+    transform: scale(1.8);
     z-index: 20;
 }
 
-.scaleX {
-    transform: scale(1.5,1);
+.polaroid:hover .image-default {
+    display: none; 
 }
 
-.skewX {
-    transform: skewX(20deg);
+.polaroid:hover .image-hover {
+    display: flex;
 }
 
-.skewY {
-    transform: skewY(20deg);
+/* Reset the styles when not hovering */
+.polaroid .image-default {
+    display: flex;
 }
 
-.skewBoth {
-    transform: skew(-45deg, 4deg);
+.polaroid .image-hover {
+    display: none;
 }
 
-.rotX {
-transform: rotateX(45deg);
-}
-
-.rotY {
-    transform: rotateY(45deg);
-}
-
-.rotZ {
-    transform: rotateZ(45deg);
+.container article h1{
+    text-align: Center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: 200px;
+    font-size: 90px;
+    font-family: "Young Serif";
 }
