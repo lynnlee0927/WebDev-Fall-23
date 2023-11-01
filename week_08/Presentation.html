@@ -6,7 +6,7 @@
     <title>Presentation</title>
 </head>
 <body>
-    <h1>Simple Math Algorithm</h1>
+    <!-- <h1>Simple Math Algorithm</h1>
     <button onclick="math_add()">Click to add</button>
     <p id="math_sum">Current Sum: 0</p>
     <p id="math_process">Process: </p>
@@ -34,6 +34,37 @@
             }
         }
     </script>
+     -->
+
+    <h1>Simple Math Algorithm</h1>
+
+    <label for="integersInput">Enter integers separated by commas (e.g., 1,2,3):</label>
+    <input type="text" id="integersInput">
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <p id="process">Process: </p>
+    <p id="result">Sum: </p>
     
+    <script>
+    function calculateSum() {
+        const input = document.getElementById("integersInput").value;
+        const integers = input.split(',').map(num => parseInt(num.trim())); //[1,2,3...]
+    
+        let sum = 0;
+        let processArray = [];
+    
+        for (let i = 0; i < integers.length; i++) {
+            const transformedValue = 2 * integers[i] + 1; //output a(x_k), find a_k
+            sum = sum + transformedValue;
+            
+            processArray.push(`2 * ${integers[i]} + 1 = ${transformedValue}`);
+        }
+
+        document.getElementById("process").innerText = "Process: \n" + processArray.join('\n');  //[2*1+1=3, 2*2+1=5, 2*3+1=7....]
+        document.getElementById("result").innerText = "Sum: " + sum;
+    }
+    </script>
+
+
 </body>
 </html>
