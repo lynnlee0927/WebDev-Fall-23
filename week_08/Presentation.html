@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+</head>
+<body>
+    <h1>Simple Math Algorithm</h1>
+    <button onclick="math_add()">Click to add</button>
+    <p id="math_sum">Current Sum: 0</p>
+    <p id="math_process">Process: </p>
+    
+    <script>
+        const integers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let currentIndex = 0; // To keep track of the current integer from the array
+        let currentSum = 0; // To keep track of the current sum
+    
+        function math_add() {
+            if (currentIndex < integers.length) {
+                currentSum += integers[currentIndex]; // Add the current integer to the sum
+                
+                // Update the process
+                const processElement = document.getElementById("math_process");
+                if (currentIndex !== 0) {
+                    processElement.innerHTML += ' + ';
+                }
+                processElement.innerHTML += integers[currentIndex];
+                
+                currentIndex++; // Move to the next integer
+                document.getElementById("math_sum").innerHTML = 'Current Sum: ' + currentSum; // Update the displayed sum
+            } else {
+                alert('All integers from the array have been added!'); // Inform the user when all integers have been added
+            }
+        }
+    </script>
+    
+</body>
+</html>
