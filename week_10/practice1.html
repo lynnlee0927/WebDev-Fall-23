@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice 1</title>
+
+    <style type="text/css">
+        img {
+            display: block;
+          }
+        
+        .hidden{
+            display: none;
+        }
+
+        .turn{
+            color: red
+        }
+    </style>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('hide').addEventListener('click',hideKitten)
+
+            document.getElementById('eventh1').addEventListener('mouseover',function(event) {
+                el = event.target
+                el.classList.toggle('turn')
+            })
+        })
+
+        function hideKitten() {
+            var kitty = document.getElementById('kitty')
+            kitty.classList.toggle('hidden')
+        }
+    </script>
+
 </head>
+
 <body>
-    
+    <h1 id = "eventh1">This H1 is here to be moused over and we can see the event object</h1>
+    <button id = "hide">HIDE</button>
+
+    <div>
+        <img src="https://placekitten.com/400/400" alt="Adorable Kitten" id="kitty">
+    </div>
 </body>
 </html>
