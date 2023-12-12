@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Front Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-auto-rows: 300px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .gallery-item {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gallery-image1 {
+            width: 60%;
+            height: 75%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(1.5);
+            margin-left: 525.5%;
+            margin-top: 50%;
+        }
+
+        .gallery-image2 {
+            width: 60%;
+            height: 70%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(0.6);
+            margin-left: 120.5%;
+            margin-top: -5%;
+        }
+
+        .gallery-image3 {
+            width: 60%;
+            height: 70%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(0.6);
+            margin-left: 60%;
+            margin-top: 5%;
+        }
+
+        .gallery-image4 {
+            width: 65%;
+            height: 65%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(0.6);
+            margin-left: 95.5%;
+            margin-top: 126%;
+        }
+
+        .gallery-image5 {
+            width: 65%;
+            height: 65%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(0.6);
+            margin-left: 37.8%;
+            margin-top: 126%;
+        }
+
+        .gallery-image6 {
+            width: 75%;
+            height: 90%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(1.1);
+            margin-left: -49%;
+            margin-top: 243%;
+        }
+
+        .gallery-image7 {
+            width: 80%;
+            height: 90%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(0.65);
+            margin-left: -495%;
+            margin-top: 70%;
+        }
+
+        .gallery-image8 {
+            width: 95%;
+            height: 95%;
+            object-fit: cover; /* Optional, to cover the space without stretching images */
+            transform: scale(0.65);
+            margin-left: -542%;
+            margin-top: 200%;
+        }
+
+        .navbar-brand {
+            font-family: 'Pacifico', cursive; /* Handwriting font */
+            font-size: 60px; /* Adjust the size as needed */
+            margin-right: 0; /* Reduce or remove the right margin */
+            padding-right: 0; /* Reduce or remove the right padding */
+        }
+
+        .container {
+        max-width: 90%; /* Increase the max-width as per your requirement */
+        margin: 30px auto; /* Adjust top & bottom margin. Auto keeps it centered */
+        }
+
+        .navbar-nav .nav-link {
+        font-size: 1.5em; /* Increase the font size */
+        font-family: 'Kaushan Script', cursive; /* Change the font family */
+        }
+
+        .navbar-nav .nav-item {
+        margin-right: 15px; /* Increase the right margin of each nav item */
+        }
+
+        .navbar-nav .nav-link {
+            padding: 0 10px; /* Increase the padding on both sides of each nav link */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container"> <!-- Start of container -->
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">RL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Interests <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Research </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="image-gallery">
+            <!-- Repeat this block for each image -->
+            <div class="gallery-item">
+                <img src="./img/WechatIMG4012.jpg" class="gallery-image1">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/v2-466e419ab57fa286b21bad75ea22133d_b.jpg" class="gallery-image2">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/WechatIMG107.jpg" class="gallery-image3">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/v2-460f8309b6aa96de9ed46041ce770fd7_720w.webp" class="gallery-image4">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/719ea4812977950d268e83521fc397b.jpg" class="gallery-image5">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/d2979c412e2fa2c50745c8fb8abc8be.jpg" class="gallery-image6">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/v2-14ddf92e253068dd61b47439d76d2a27_b.jpg" class="gallery-image7">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/1200x1200bb.jpg" class="gallery-image8">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/s-l500.jpg" class="gallery-image8">
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add JavaScript code as needed for interactivity
+    </script>
+</body>
+</html>
+
