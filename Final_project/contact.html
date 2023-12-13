@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Add FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .navbar-brand {
+            font-family: 'Pacifico', cursive; /* Handwriting font */
+            font-size: 4em; /* Adjust the size as needed */
+            margin-right: 0; /* Reduce or remove the right margin */
+            padding-right: 0; /* Reduce or remove the right padding */
+        }
+
+        .container {
+        max-width: 80%; /* Increase the max-width as per your requirement */
+        margin: 30px auto; /* Adjust top & bottom margin. Auto keeps it centered */
+        }
+
+        .navbar-nav .nav-link {
+        font-size: 1.5em; /* Increase the font size */
+        font-family: 'Kaushan Script', cursive; /* Change the font family */
+        }
+
+        .navbar-nav .nav-item {
+        margin-right: 15px; /* Increase the right margin of each nav item */
+        }
+
+        .navbar-nav .nav-link {
+            padding: 0 10px; /* Increase the padding on both sides of each nav link */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container"> <!-- Start of container -->
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+           <a class="navbar-brand" href="./front.html">RL</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index2.html">Gallery </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Interests.html">Interests</a>
+                    </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="./Research.html">Research</a>
+                   </li>
+                   <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                   </li>
+               </ul>
+           </div>
+       </nav>
+
+        <section class="mb-4">
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly.</p>
+        
+            <div class="row">
+        
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                    </form>
+        
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Brooklyn, NYC 11201, USA</p>
+                        </li>
+        
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+ 01 123 456 789</p>
+                        </li>
+        
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>yl9596@nyu.edu</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+            </div>
+        
+        </section>
+    </div>
+</body>
+</html>

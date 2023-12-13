@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .navbar-brand {
+            font-family: 'Pacifico', cursive; /* Handwriting font */
+            font-size: 4em; /* Adjust the size as needed */
+            margin-right: 0; /* Reduce or remove the right margin */
+            padding-right: 0; /* Reduce or remove the right padding */
+        }
+
+        .container {
+        max-width: 80%; /* Increase the max-width as per your requirement */
+        margin: 30px auto; /* Adjust top & bottom margin. Auto keeps it centered */
+        }
+
+        .navbar-nav .nav-link {
+        font-size: 1.5em; /* Increase the font size */
+        font-family: 'Kaushan Script', cursive; /* Change the font family */
+        }
+
+        .navbar-nav .nav-item {
+        margin-right: 15px; /* Increase the right margin of each nav item */
+        }
+
+        .navbar-nav .nav-link {
+            padding: 0 10px; /* Increase the padding on both sides of each nav link */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- Start of container -->
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+           <a class="navbar-brand" href="./front.html">RL</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index2.html">Gallery </a>
+                    </li>
+                   <li class="nav-item active">
+                       <a class="nav-link" href="./Interests.html">Interests <span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="./Research.html">Research</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="./contact.html">Contact</a>
+                   </li>
+               </ul>
+           </div>
+        </nav>
+
+        <div class="container-fluid"> <!-- Full-width container -->
+            <div class="row justify-content-center"> <!-- Centered row -->
+                <div class="col-md-13"> <!-- Adjust the column size as needed -->
+                    <img src="./img/cs2.jpg" class="img-fluid w-100" alt="Album Cover">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/oTjmNt2PdN0?si=W7L1Xb3G8sPZ_oqq" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/VINyOxJbcA8?si=zMI80kS5FKsiXSbD" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
